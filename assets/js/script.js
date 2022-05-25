@@ -1,10 +1,10 @@
 let nome = document.querySelector("#nome");
 let email = document.querySelector("#email");
-let assunto = document.querySelector("#assunto");
+let apelido = document.querySelector("#apelido");
 let mapa = document.querySelector("#mapa");
 let nomeOk = false;
 let emailOk = false;
-let assuntoOk = false;
+let apelidoOk = false;
 
 function validaNome() {
     let txtNome = document.querySelector("#txtNome");
@@ -19,6 +19,8 @@ function validaNome() {
     }
 }
 
+
+
 function validaEmail() {
     let txtEmail = document.querySelector("#txtEmail");
     if (email.value.indexOf("@") === -1) {
@@ -32,17 +34,17 @@ function validaEmail() {
     }
 }
 
-function validaAssunto() {
-    let txtAssunto = document.querySelector("#txtAssunto" );
+function validaApelido() {
+    let txtAssunto = document.querySelector("#txtApelido" );
 
-    if (assunto.value.length > 100) {
-        txtAssunto.innerHTML = "Texto muito grande. Digite no máximo 100 caracteres";
-        txtAssunto.style.color = "#f00";
-        txtAssunto.style.display = "block";
-        assuntoOk = false;
+    if (apelido.value.length > 15) {
+        txtApelido.innerHTML = "Apelido muito grande. Digite no máximo 15 caracteres";
+        txtApelido.style.color = "#f00";
+        txtApelido.style.display = "block";
+        apelidoOk = false;
     } else {
-        txtAssunto.style.display = "none";
-        assuntoOk = true;
+        txtApelido.style.display = "none";
+        apelidoOk = true;
     }
 }
 

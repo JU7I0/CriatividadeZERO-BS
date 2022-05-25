@@ -77,7 +77,7 @@
               debitis at assumenda doloribus odit.
             </p>
 
-            <form>
+            <form class="col-1">
               <input class="mb-3"
                 type="text"
                 id="nome"
@@ -85,6 +85,13 @@
                 placeholder="Nome"
               />
               <div id="txtNome"></div>
+              <input class="mb-3"
+                type="text"
+                id="apelido"
+                onkeyup="validaApelido()"
+                placeholder="Apelido"
+              />
+              <div id="txtApelido"></div>
               <input  class="mb-3"
                 type="email"
                 id="email"
