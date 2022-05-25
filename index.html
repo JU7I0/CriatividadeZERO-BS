@@ -9,12 +9,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">      
   </head>
   <body>
-    <header>
+    <header class="mb-lg-5">
       <div class="container">
         <div class="head my-3">
           <nav class="navbar navbar-expand-lg navbar-light head_custom-nav">
@@ -62,7 +61,7 @@
       </div>
     </header>
 
-    <main class="mt-lg-5">
+    <main class="my-lg-5">
       <div class="container mt-lg-5">
         <div class="row">
           <div class="col">
@@ -96,49 +95,197 @@
               <input type="submit" value="ENVIAR >" onclick="enviar()" />
             </form>
           </div>
-          <div class="col">
-            <div class="d-flex justify-content-center">
-              <div
-                id="carouselExampleSlidesOnly"
-                class="carousel slide"
-                data-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      class="d-block w-100"
-                      src=""
-                      alt="Primeiro Slide"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      class="d-block"
-                      src=""
-                      alt="Segundo Slide"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      class="d-block w-100"
-                      src=""
-                      alt="Terceiro Slide"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      class="d-block w-100"
-                      src=""
-                      alt="Quarto Slide"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col p-0">
+            <img  width="600px" height="500px" src="assets/img/logo.png" alt="logo">
           </div>
         </div>
       </div>
+
+      <div class="container-fluid my-lg-5 d-flex row justify-content-around">
+
+        <div class="card" style="width: 15rem;">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 15rem;">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="my-lg-5">
+        
+        <!-- <div id="carouselExampleControls" class="carousel" data-mdb-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/2865833414_41bdd2038f_o.jpg" class="d-block w-100" alt="Wild Landscape"/>
+            </div>
+            <div class="carousel-item active">
+              <img src="assets/img/h_western-kingbird_001_spring_california_beckymatsubara_flickrcc-by-2.0_adult.jpg" class="d-block w-100" alt="Wild Landscape"/>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/robin-5899771_1280.jpg" class="d-block w-100" alt="Camera"/>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Weaver_bird.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+        <!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img src="assets/img/2865833414_41bdd2038f_o.jpg" class="d-block w-100" alt="Sunset Over the City"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="assets/img/h_western-kingbird_001_spring_california_beckymatsubara_flickrcc-by-2.0_adult.jpg" class="d-block w-100" alt="Canyon at Nigh"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="assets/img/robin-5899771_1280.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
+    
+      </div>
+
     </main>
+          
+    <div class="container-fluid m-0 p-0">
+      <footer
+              class="text-center text-lg-start text-white"
+              style="background-color: #3e4551"
+              >
+        <div class="container p-4 pb-0">
+          <hr class="mb-4" />
+            <section class="mb-4 text-center">
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              >
+                <i class="devicon-facebook-plain colored"></i>
+        
+            </a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              >
+                <i class="devicon-twitter-original colored"></i>
+              </a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              >
+                <i class="devicon-linkedin-plain colored"></i>
+              </a>
+
+            <!-- Github -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              >
+                <i class="devicon-github-original colored"></i>
+            </a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+          © 2020 Copyright:
+          <a class="text-white" href="https://github.com/JU7I0"
+            >JU7I0</a
+            >
+        </div>
+      </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -151,43 +298,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/script.js"></script>
-    <!-- <header>
-                    <div>
-                        <a href="index.html">
-                            <h1 >Criatividade</h1>
-                            <hi >ZERO</hi>
-                        </a>
-                    </div>
-                        <ul>                 
-                            <a href="index.html">HOME</a>
-                            <a href="contato.html">CONTATO</a> 
-                            <a href="cadastro.html">INSCREVA-SE</a>
-                        </ul>
-                </header>
 
-                <main>
-                    
-                    <section>
-                        <h2><span>CSS, mil formas de enlouquecer</span></h2>
-                        <h2>Inscreva-se na nossa Newslatter</h2>
-                        
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum doloremque reprehenderit nulla libero hic. Praesentium placeat, incidunt reprehenderit quam aliquam impedit ipsa facere autem sed debitis at assumenda doloribus odit.</p>
-                        
-                        <form>
-                            <input type="text" id="nome" onkeyup="validaNome()" placeholder="Nome">
-                            <div id="txtNome"></div>
-                            <input type="email" id="email" onkeyup="validaEmail()" placeholder="E-mail">
-                            <div id="txtEmail"></div>
-                            <input type="submit" value="ENVIAR >" onclick="enviar()">
-                        </form>
-
-                    </section>
-                    
-                    <aside>
-                        <img src="assets/img/CSS-removebg-preview.png" alt="foto do julio">
-                    </aside>
-
-                    <script src="assets/js/script.js"></script>
-                </main> -->
   </body>
 </html>
